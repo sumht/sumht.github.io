@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="work"
+                  name="工作方案"
+                  start-page="主页.md">
+    <toc-element topic="主页.md"/>
+    <toc-element toc-title="方案">
+        <toc-element topic="SpringBoot组件开发.md" />
+        <toc-element topic="Maven私服搭建与上传.md" />
+        <toc-element topic="OnlyOffice安装.md"/>
+    </toc-element>
+    <toc-element toc-title="门户">
+        <toc-element topic="项目介绍.md" />
+        <toc-element topic="系统架构.md" />
+        <toc-element toc-title="应用对接">
+            <toc-element topic="表单代填应用.md"/>
+            <toc-element topic="OAuth2应用.md"/>
+        </toc-element>
+    </toc-element>
+
+    <toc-element toc-title="组件">
+        <toc-element toc-title="概述">
+            <toc-element topic="框架说明.md"/>
+            <toc-element topic="技术选型.md"/>
+        </toc-element>
+        <toc-element toc-title="后端功能组件">
+            <toc-element topic="工具集.md"/>
+            <toc-element topic="安全框架.md"/>
+            <toc-element topic="数据权限.md"/>
+            <toc-element topic="字典.md"/>
+            <toc-element topic="IP拓展.md"/>
+            <toc-element topic="多租户.md"/>
+            <toc-element topic="数据翻译.md"/>
+            <toc-element topic="验证码.md"/>
+            <toc-element topic="Excel.md"/>
+            <toc-element topic="定时任务.md"/>
+            <toc-element topic="服务监控.md"/>
+            <toc-element topic="消息队列.md"/>
+            <toc-element topic="MybatisPlus.md"/>
+            <toc-element topic="服务保障.md"/>
+            <toc-element topic="Redis缓存.md"/>
+            <toc-element topic="权限控制.md"/>
+            <toc-element topic="接口签名.md"/>
+            <toc-element topic="测试组件.md"/>
+            <toc-element topic="Web框架.md"/>
+            <toc-element topic="WebSocket.md"/>
+        </toc-element>
+        <toc-element toc-title="开发指南">
+            <toc-element toc-title="开发脚手架">
+                <toc-element topic="脚手架.md"/>
+                <toc-element topic="版本说明.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="更新日志.md"/>
+    </toc-element>
+</instance-profile>
