@@ -20,18 +20,18 @@ jobs:
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 10
+          version: 8.15.8
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
-          node-version: 22
+          node-version: 20
           # 缓存 pnpm 依赖
           cache: pnpm
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       # 运行构建脚本
       - name: 构建 VuePress 站点
