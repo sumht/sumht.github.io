@@ -27,6 +27,7 @@ jobs:
           node-version: 22
           # 缓存 pnpm 依赖
           cache: pnpm
+          version: 8.14.0 # 您可以根据需要指定特定的 pnpm 版本
 
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
