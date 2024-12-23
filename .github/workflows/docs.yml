@@ -19,8 +19,6 @@ jobs:
 
       - name: 设置 pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 8.14.0 # 您可以根据需要指定特定的 pnpm 版本
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
@@ -29,7 +27,6 @@ jobs:
           node-version: 22
           # 缓存 pnpm 依赖
           cache: pnpm
-
 
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
@@ -44,9 +41,9 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           # 部署到 gh-pages 分支
-          target_branch: gh-pages
+          target_branch: main
           # 部署目录为 VuePress 的默认输出目录
-          build_dir: src/.vuepress/dist
+          build_dir: docs/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
