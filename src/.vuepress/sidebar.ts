@@ -21,7 +21,7 @@ export default sidebar({
       text: "专题",
       icon: "book",
       prefix: "agile-team/",
-      children: ["readme", "order", "title", "filename"],
+      children: "structure",
     },
   ],
 });
